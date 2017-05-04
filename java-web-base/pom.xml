@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.ft.mask</groupId>
+    <artifactId>mask</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <groupId>com.ft.mask</groupId>
+  <artifactId>java-web-base</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>java-web-base</name>
+  <url>http://maven.apache.org</url>
+  <packaging>pom</packaging>
+
+    <modules>
+    <module>junit-test-controller</module>
+    <module>log-detail-test</module>
+    <module>lucene-demo</module>
+  </modules>
+</project>
