@@ -7,10 +7,8 @@
     <artifactId>java-web-base</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <groupId>com.ft</groupId>
   <artifactId>jwb-junit-test-controller</artifactId>
   <packaging>war</packaging>
-  <version>0.0.1-SNAPSHOT</version>
   <name>jwb-junit-test-controller</name>
   <url>http://maven.apache.org</url>
 <properties>

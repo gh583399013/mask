@@ -7,9 +7,7 @@
     <artifactId>mask</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <groupId>com.ft.mask</groupId>
   <artifactId>java-web-base</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
   <name>java-web-base</name>
   <url>http://maven.apache.org</url>
   <packaging>pom</packaging>
