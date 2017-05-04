@@ -9,9 +9,9 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>com.ft</groupId>
-	<artifactId>log-detail-test</artifactId>
+	<artifactId>jwb-log-detail-test</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>log-detail-test</name>
+	<name>jwb-log-detail-test</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

@@ -15,8 +15,8 @@
   <packaging>pom</packaging>
 
     <modules>
-    <module>junit-test-controller</module>
-    <module>log-detail-test</module>
-    <module>lucene-demo</module>
+    <module>jwb-junit-test-controller</module>
+    <module>jwb-log-detail-test</module>
+    <module>jwb-lucene-demo</module>
   </modules>
 </project>
