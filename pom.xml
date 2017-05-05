@@ -10,10 +10,12 @@
 		<!-- spring版本号 -->
 		<spring.version>4.2.4.RELEASE</spring.version>
 		<java.version>1.7</java.version>
+		<junit.version>4.11</junit.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
+			<!-- spring bom 解决spring依赖多版本问题(第三方jar依赖的spring版本就可以统一起来，并且 你也不用再申明spring依赖的版本了) -->
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-framework-bom</artifactId>
@@ -21,13 +23,24 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
+
+			<!-- junit -->
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>${junit.version}</version>
+				<scope>test</scope>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
-  <modules>
-    <module>java-web-base</module>
-    <module>java-base</module>
+	<modules>
+		<module>java-web-base</module>
+		<module>java-base</module>
+		<module>java-springframework</module>
+    <module>java-notes</module>
+    <module>java-utils</module>
   </modules>
-  	<build>
+	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
