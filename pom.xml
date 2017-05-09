@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.ft.mask</groupId>
 	<artifactId>mask</artifactId>
@@ -30,7 +31,7 @@
 				<artifactId>fastjson</artifactId>
 				<version>${fastjson.version}</version>
 			</dependency>
-			
+
 			<!-- junit -->
 			<dependency>
 				<groupId>junit</groupId>
@@ -44,9 +45,9 @@
 		<module>java-web-base</module>
 		<module>java-base</module>
 		<module>java-springframework</module>
-    <module>java-notes</module>
-    <module>java-utils</module>
-  </modules>
+		<module>java-notes</module>
+		<module>java-utils</module>
+	</modules>
 	<build>
 		<plugins>
 			<plugin>
@@ -57,6 +58,18 @@
 					<source>${java.version}</source>
 					<target>${java.version}</target>
 					<encoding>utf8</encoding>
+				</configuration>
+			</plugin>
+
+			<!-- maven-surefire-plugin -->
+			<!-- eclipse整合maven之怎么打包的时候跳过测试junit -->
+			<plugin>
+				<inherited>true</inherited>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.19.1</version>
+				<configuration>
+					<skip>true</skip>跳过测试
 				</configuration>
 			</plugin>
 		</plugins>
